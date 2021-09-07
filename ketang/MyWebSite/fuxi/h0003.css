@@ -1,0 +1,24 @@
+.div01 {
+  /* 设置宽度也不会将剩下的空间给后面的 */
+  width: 30%;
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+.span01 {
+  /* 对span（行内）元素设置宽度 */
+  width: 30px;
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+.span02 {
+  /* 通过样式改变显示规则
+  display是改变显示规则
+  inline-block值表示元素显示规则变成行内块级元素
+  也就是可以设置宽度，但是默认又不会占满一行 */
+  display: inline-block;
+  width: 300px;
+  background-color: #ff0000;
+  color: #ffffff;
+}

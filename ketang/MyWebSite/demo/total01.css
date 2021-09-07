@@ -1,0 +1,141 @@
+/* 小结2的css-total01.css */
+
+.fl {
+  /* 向左浮动元素 */
+  float: left;
+}
+
+.bg01 {
+  background-color: #ff0000;
+}
+
+.bg02 {
+  background-color: #00ff00;
+}
+
+.bbox {
+border: 2px solid #0000ff;
+}
+
+.clearfix {
+  /* 清除浮动，如果全部都是浮动，会造成高度丢失
+  所以需要清除浮动来通知容器计算机高度，且立即换行 */
+  clear: both;
+}
+
+.fr {
+  /* 向右浮动 */
+  float: right;
+}
+
+.bg03 {
+  background-color: #ffff00;
+}
+
+.body {
+  padding: 0px;
+  margin: 0px;
+  height: 2000px;
+}
+
+.menu-bg {
+  /* 菜单背景 */
+  background-color: #ff0000;
+}
+
+.menu-center {
+  /* 中间菜单容器 */
+  width: 1000px;
+  margin: 0px auto;
+  background-color: #ffff00;
+  color: #0000ff;
+  font-size: 1.2rem;
+}
+
+.menu-center span {
+  /* 中间菜单的span元素 */
+  /* 将span元素的显示效果设置成行级块元素
+  只有块级元素可以设置宽度 */
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 5px;
+}
+
+.menu-center span:hover {
+  /* hover是鼠标悬停伪类 */
+  /* 鼠标指针 */
+  cursor: pointer;
+  background-color: #ff0000;
+  color: #ffffff;
+  background-image: url('../images/img0002.jpg');
+  background-size: cover;
+}
+
+/* 固定位置 */
+.fixed-bottom {
+  /* 设置固定位置，div元素会丢失宽度，变成自动计算 */
+  position: fixed;
+  /* 设置位置,top上，left左，bottom下，right右
+  可以固定值，也可以是百分比 */
+  bottom: 0px;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.fixed-right {
+  position: fixed;
+  right: 0px;
+  top: 40%;
+  background-color: #0000ff;
+  color: #ffffff;
+  /* 字变成竖条 */
+  /* 计量的单位，
+  px：像素
+  em：按照当前容器的字体大小缩放倍数，是相对计量单位；
+  rem：按照浏览器基础字体大小缩放倍数，是绝对计量单位
+  xx%：百分比，容器宽度的比率，是相对计量单位 */
+  font-size: 2rem;
+  width: 2.1rem;
+  text-align: center;
+  padding: 0.2rem;
+}
+
+.fixed-left {
+  position: fixed;
+  left: 0px;
+  top: 100px;
+  background-color: #ff0000;
+  color: #ffffff;
+  font-size: 2.5rem;
+  width: 2.5rem;
+}
+
+/* 字体大小（计量单位演示） */
+.fs {
+  font-size: 36px;
+}
+
+.fs02 {
+  font-size: 50px;
+}
+
+.fs03 {
+  font-size: 4rem;
+}
+
+.fs04 {
+  font-size: 4rem;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+  /* 控制圆角变化形状 */
+  border-radius: 50% 50%;
+}

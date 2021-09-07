@@ -1,0 +1,234 @@
+/* demo0002.css */
+.div-title {
+  /* 标题容器的样式 */
+  width: 800px;
+  /* 由于上方有fixed元素，所以保持和fixed元素一段距离
+  避免被fixed元素遮挡
+   */
+  margin: 30px auto;
+  padding: 10px 0px;
+  /* 单一位置的border */
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+}
+
+.div-title-01 {
+  /* 标题的大文字 */
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 10px 0px;
+}
+
+.div-list {
+  /* 列表容器样式 */
+  width: 1200px;
+  /* 
+  第一个参数是上下的外边距，
+  第二个参数auto表示左右的间距自动计算，
+  只有设置了宽度这个计算才有意义
+  效果为固定在容器的中间
+   */
+  margin: 20px auto;
+}
+
+.clearfix {
+  /* 清除浮动效果的div */
+  clear: both;
+  height: 0px;
+}
+
+.div-copyright {
+  /* 版权样式 */
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 20px 0px;
+}
+
+.div-copyright:hover {
+  /* 版权鼠标悬停样式 */
+  color: #0000aa;
+  cursor: pointer;
+}
+
+.div-item {
+  /* 列表项样式 */
+  float: left;
+  width: 21%;
+  margin: 1rem;
+  padding: 0.2rem;
+  border: 1px solid #666666;
+  transition: all 0.5s;
+  height: 300px;
+}
+
+.div-item:hover {
+  /* 列表项悬停效果 */
+  border-color: transparent;
+  /* box-shadow: 5px 5px 5px #0000aa;阴影 */
+  box-shadow: 0px 0px 25px #0000aa;
+}
+/* 内联样式表
+由于div-item里面只有一个图片，为了简化样式命名
+可以通过级联表达式对内部元素设置样式
+基本选择器  内部选中器{
+}
+注意，中间有个空格！！！
+就是内联样式，表示套用了基本选择器的元素的里面
+套用了内部选择器的元素才能生效
+例如
+.abc .def表示 class="abc"的元素里面class="def"的
+
+<div class="abc“>
+  <span class="def">这里会生效</span>
+  </div>
+
+  <div class="abc">
+    <div class="xxxdd">
+    ...
+    <span class="def">这里会生效</span>
+    </div>
+    </div>
+ */
+.div-item img {
+  /* class="div-item"里面的img标签套用样式 */
+  width: 100%;
+  cursor: pointer;
+}
+
+.tc {
+  /* 文字居中样式 */
+  text-align: center;
+}
+
+.item-line1 {
+  /* 第一行的样式 */
+  color: #0000aa;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 5px 0px 5px 0px;
+  cursor: pointer;
+}
+
+.item-line2 {
+  /* 第二行的样式 */
+  font-size: 1.2rem;
+  color: #777777;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+}
+
+.item-line3 {
+  /* 第三行的样式 */
+  font-size: 0.8rem;
+  padding: 5px 0px 5px 0px;
+}
+
+.div-top {
+  /* 上端导航条 */
+  background-color: #000000;
+  color: #9d9d9d;
+  font-size: 1.2rem;
+  padding: 10px 0px;
+  /* 让div固定位置 */
+  position: fixed;
+  width: 100%;
+  /* 固定位置在top=0的地方 */
+  top: 0px;
+}
+
+.div-top-menus {
+  /* 导航条菜单容器 */
+  width: 1300px;
+  margin: 0px auto;
+}
+
+.body {
+  margin: 0px;
+  padding: 0px;
+  font-family: '微软雅黑';
+}
+
+.fl {
+  /* 靠左浮动 */
+  float: left;
+}
+
+.fr {
+  /* 靠右浮动 */
+  float: right;
+}
+
+.div-top-menus span:hover {
+  /* 导航条菜单鼠标悬停样式 */
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.menu01 {
+  /* 第一个菜单 */
+  font-size: 1.2em;
+}
+
+.div-ad {
+  /* background-color: #7c39d1; */
+  margin: 30px 0px 0px 0px;
+  padding: 50px 0px;
+  /* 
+  rgba颜色系统：
+  rgba（0-255红，0-255绿，0-255蓝，0-1不透明度）
+  */
+  background-color: rgba(100, 0, 100, 0.5);
+  text-align: center;
+  color: #ffffff;
+  background-image: url('../images/bs-docs-masthead-pattern.png');
+}
+
+.div-ad01 {
+  /* 广告第一行样式 */
+  font-size: 7rem;
+  font-weight: bold;
+  font-family: '微软雅黑';
+}
+
+.div-ad02 {
+  /* 广告第二行样式 */
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem 0px;
+}
+
+.div-ad03 {
+  /* 广告第三行的样式容器 */
+  margin: 2rem 0px;
+}
+
+.span-ad03 {
+  /* 广告第三行样式 */
+  background-color: #2a6496;
+  padding: 0.8rem 3rem;
+  margin: 1rem 0px;
+  font-size: 1.3rem;
+  /* 圆角样式 */
+  border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+  box-shadow: 0px 0.3px 0px #084274;
+}
+
+.span-ad03:hover {
+  /* 广告第三行按钮鼠标悬停样式 */
+  background-color: #195385;
+  cursor: pointer;
+}
+
+.span-ad04 {
+  /* 广告第四行样式 */
+  color: #dddddd;
+}
+
+.span-ad04:hover {
+  /* 广告第四行鼠标悬停样式 */
+  color: #ffffff;
+  cursor: pointer;
+  /* 添加下划线 */
+  text-decoration: underline;
+}

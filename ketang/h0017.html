@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>h0017.html-css</title>
+    <!-- 
+        style标记是用来专门写样式的地方；
+    编写的格式是选择器{}
+    那么选择器对应的元素会套用指定的样式
+    第一类选择器是元素选择器，直接使用html标签名称就可以了
+    列如：
+    p {
+        样式。。。
+    }
+    表示页面上所有的p标记都会套用{}中的样式
+    所谓的层叠，表示，当有多个样式在不同的地方对同一个元素造成影响的时候
+    那么不同的样式会叠加起来，
+    相同的样式会按照作用的次序只会让最近的效果作用
+ -->
+    <style>
+        p {
+            color: #ffccdd;
+            background-color: #00ff00;
+        }
+    </style>
+</head>
+
+<body style="font-size: 2rem;font-weight:  bold;">
+    <p align="right">
+        <a href="index.html">返回目录</a>
+    </p>
+    <!-- 
+        css是层叠样式表，主要是设置页面的各种（颜色，大小等待。。。）效果
+        元素的style属性就是设置样式，样式是由名称；值；组成
+        比如颜色是color；red;表示设置字体颜色为red
+        可以编写多个属性
+        color属性除了指定颜色名称以外，还可以指定明确的颜色
+        颜色值是#开头的16进制(0-f)的数rrggbb
+        r=红色,g=绿色，b=蓝色，这个是电脑的三原色
+        也可以是省略为rgb格式，一共是65535种颜色
+        一个特殊的颜色，transparent,透明颜色
+     -->
+    <span style="color: aqua;font-size: x-large;">颜色</span>
+    <span style="color:#660000;">1</span>
+    <span style="color:#770000;">2</span>
+    <span style="color:#880000;">3</span>
+    <span style="color:#990000;">4</span>
+    <span style="color:#aa0000;">5</span>
+    <span style="color:#bb0000;">6</span>
+    <span style="color:#ff0000;">7</span>
+    <span style="color:#fbd59c;">人</span>
+    <span style="color:transparent;">透明颜色</span>
+    <!-- 
+        background-color是背景颜色
+        一般背景颜色和背景颜色（color）；要搭配使用
+        那么背景色深，前景色就会浅一些
+     -->
+    <div style="background-color:#ff0000;">
+        背景颜色
+    </div>
+    <div style="background-color:#111111;color: #ff0000;">
+        深色背景
+    </div>
+    <p style="color:red;">第一段</p>
+    <p>第二段</p>
+</body>
+
+</html>

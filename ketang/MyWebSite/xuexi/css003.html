@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>/xuexi/css003.html</title>
+    <style>
+      /* 
+      通过下面定义的样式
+      .类名称 {
+        样式名称：样式值；
+        [...]
+        }
+        要在元素中定义class=“类名称”才会生效
+       */
+      .tr {
+        text-align: right;
+      }
+      .tc {
+        text-align: center;
+      }
+
+      .body {
+        background-image: url('../images/img0002.jpg');
+        background-size: cover;
+      }
+      .bg-div {
+        background-image: url('../images/img0001.jpg');
+        background-size: cover;
+        font-size: 4rem;
+        /*div 元素的高宽（不是所有的元素都可以设置高宽）*/
+        width: 400px;
+        height: 400px;
+        /* 将块级元素（div）元素居中的第一种方法
+        该方法必须要设置高宽
+        注意！！！
+        文字居中和元素居中是不一样的！！！
+        text-align除了可以将文字居中，
+        还可以将span，i，b，u，a这些元素居中
+         */
+        margin: 0px auto;
+      }
+      .pd-div {
+        /* 
+         内边距：设置元素里面的内容和边界的距离
+         padding：上  右  下  左；
+          */
+        padding: 10px 20px 30px 40px;
+      }
+
+      .bd-div {
+        /* 
+        边框：设置元素的边框
+        第一个参数，边框的宽度
+        第二个参数，边框的线条
+        第三个参数，边框的颜色
+         */
+        border: 1px solid #66aacc;
+        color: #ffffff;
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body class="body">
+    <div class="tr">
+      <a href="index.html">返回目录</a> | <a href="../index.html">返回首页</a>
+    </div>
+    <div class="tc"><div class="bg-div">带高宽和背景图片的div</div></div>
+    <!-- class="类1  类2..." -->
+    <div class="pd-div bd-div"></div>
+    <div class="bd-div">内边距演示的div</div>
+  </body>
+</html>

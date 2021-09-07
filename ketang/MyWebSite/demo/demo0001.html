@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>demo0001.html</title>
+    <style>
+      /* 页面标题相关样式========================================= */
+      .biaoti {
+        /* 标题的整体样式 */
+        width: 600px;
+        margin: 0px auto;
+        padding: 20px 0px 20px 0px;
+      }
+      .biaoti01 {
+        /* 标题第一行样式 */
+        text-align: center;
+        font-size: 2.5rem;
+        /* 字体加粗 */
+        font-weight: bold;
+        padding: 10px 0px 10px 0px;
+      }
+
+      .biaoti02 {
+        /* 小标题的样式 */
+        text-align: center;
+        padding: 0px 0px 10px 0px;
+      }
+      /* 页面标题相关样式结束===================================== */
+
+      /* 项目列表相关样式========================================== */
+      .liebiao {
+        /* 项目列表的容器样式 */
+        width: 1000px;
+        margin: 0px auto;
+      }
+
+      .liebiao01 {
+        /* 列表项的容器样式 */
+        width: 20%;
+        border: 1px solid #666666;
+        padding: 5px 5px 5px 5px;
+        /* 让div元素浮动在容器中，这个时候div会变成内容一样的宽度，
+        或者是指定的宽度，但是容器会无法计算div的高度
+        float浮动
+         */
+        float: left;
+        height: 320px;
+        /* 
+        元素的外边距，所表示元素和外面的元素的距离
+        只写一个，表示上右下左的值一样
+        只写两个，表示上下和左右
+       */
+        margin: 15px 15px 15px 15px;
+        /* 
+        过渡效果，表示当属性变化的时候是延时渐变，而不是瞬间完成
+        transition表示过渡，
+        第一参数表示什么属性变化的时候发生过渡，
+        比如width表示宽度变化是过渡的效果
+        all表示任何属性变化都是过渡的效果
+        第二个参数表示过渡的时间长度
+        第三 个参数可选，表示过渡的时间速动函数名
+         */
+         transition: all 0.5s ease-in-out;
+      }
+
+      /*
+       伪类：hover，表示鼠标进入元素之后的效果
+      .liebiao01：hover表示当鼠标进入class="libiao01"的元素
+       */
+      .liebiao01:hover {
+        /* 
+        cursor是鼠标形状，pointer表示是手点击的形状 
+        */
+        cursor: pointer;
+        /* 
+        box-shadow阴影
+        第一个参数是x轴的阴影距离
+        第二个参数是y轴的阴影距离
+        第三个参数是z轴的阴影距离，前两个为0，这个大于零就是外发光的效果
+        这个为0，前两个大于零就是光照阴影的效果
+        第四个是阴影的颜色
+         */
+         box-shadow: 0px 0px 20px #990091;
+         border: 1px solid transparent;
+      }
+
+      .clearfix {
+        /* 清除浮动元素，和float配合使用，
+        在最后一个float元素的后面加div并套用该样式
+        那么后面元素就会正常的另起一行  */
+        clear: both;
+        height: 0px;
+      }
+
+      .liebiao-img {
+        /* 列表项的图片样式 */
+        width: 100%;
+      }
+
+      .liebiao-sm {
+        /* 列表项的说明容器样式 */
+        padding: 20px 5px 30px 5px;
+        text-align: center;
+      }
+
+      .liebiao-sm01 {
+        /* 说明项第一个 */
+        color: #337ab7;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding: 2px 0px 2px 0px;
+      }
+
+      .liebiao-sm02 {
+        /* 说明第二个 */
+        font-size: 1rem;
+        padding: 2px 0px 2px 0px;
+      }
+
+      .liebioa-sm03 {
+        /* 说明第三个 */
+        font-size: 0.8rem;
+        padding: 15px 0px 15px 0px;
+      }
+      /* 项目列表相关样式结束====================================== */
+    </style>
+  </head>
+  <body>
+    <!-- 页面标题部分=========================================== -->
+    <div class="biaoti">
+      <div class="biaoti01">Bootstrap相关优质项目推荐</div>
+      <div class="biaoti02">
+        这些项目或者是对Bootstrap进行了有益的补充，或者是基于Bootstrap开发的
+      </div>
+      <hr />
+    </div>
+    <!-- 页面标题部分结束======================================= -->
+
+    <!-- 项目列表部分=========================================== -->
+    <div class="liebiao">
+      <!-- 列表项=============================================== -->
+      <div class="liebiao01">
+        <div>
+          <img src="../images/webpack.png" alt="" class="liebiao-img" />
+        </div>
+        <!-- 列表项结束========================================== -->
+
+        <!-- 列表项============================================== -->
+        <div class="liebiao-sm">
+          <div class="liebiao-sm01">webpack</div>
+          <div class="liebiao-sm02">是前端资源模块化打包工具</div>
+          <div class="liebiao-sm03">
+            webpack是当下最热门的基于nodejs前端资源模块化打包工具。
+            它可以将很多松散的模块依照依赖和规则打包成生产环境部署的前端资源。
+          </div>
+        </div>
+      </div>
+      <!-- 列表项结束======================================= -->
+
+      <!-- 列表项=========================================== -->
+      <div class="liebiao01">
+        <div>
+          <img src="../images/webpack.png" alt="" class="liebiao-img" />
+        </div>
+        <div class="liebiao-sm">
+          <div class="liebiao-sm01">其它的项</div>
+          <div class="liebiao-sm02">其它的项说明</div>
+          <div class="liebiao-sm03">
+            其它的项的详细说明，balabala。。。好多好多的说明文字
+            div标签都是成对的，一对div都是在一条线上
+          </div>
+        </div>
+      </div>
+      <!-- 列表项结束==================================== -->
+
+      <!-- 列表项=========================================== -->
+      <div class="liebiao01">
+        <div>
+          <img src="../images/webpack.png" alt="" class="liebiao-img" />
+        </div>
+        <div class="liebiao-sm">
+          <div class="liebiao-sm01">其它的项</div>
+          <div class="liebiao-sm02">其它的项说明</div>
+          <div class="liebiao-sm03">
+            其它的项的详细说明，balabala。。。好多好多的说明文字
+            div标签都是成对的，一对div都是在一条线上
+          </div>
+        </div>
+      </div>
+      <!-- 列表项结束==================================== -->
+
+      <!-- 列表项=========================================== -->
+      <div class="liebiao01">
+        <div>
+          <img src="../images/webpack.png" alt="" class="liebiao-img" />
+        </div>
+        <div class="liebiao-sm">
+          <div class="liebiao-sm01">其它的项</div>
+          <div class="liebiao-sm02">其它的项说明</div>
+          <div class="liebiao-sm03">
+            其它的项的详细说明，balabala。。。好多好多的说明文字
+            div标签都是成对的，一对div都是在一条线上
+          </div>
+        </div>
+      </div>
+      <!-- 列表项结束==================================== -->
+      <!-- 列表项=========================================== -->
+      <div class="liebiao01">
+        <div>
+          <img src="../images/webpack.png" alt="" class="liebiao-img" />
+        </div>
+        <div class="liebiao-sm">
+          <div class="liebiao-sm01">其它的项</div>
+          <div class="liebiao-sm02">其它的项说明</div>
+          <div class="liebiao-sm03">
+            其它的项的详细说明，balabala。。。好多好多的说明文字
+            div标签都是成对的，一对div都是在一条线上
+          </div>
+        </div>
+      </div>
+      <!-- 列表项结束==================================== -->
+      <!-- 列表项=========================================== -->
+      <div class="liebiao01">
+        <div>
+          <img src="../images/webpack.png" alt="" class="liebiao-img" />
+        </div>
+        <div class="liebiao-sm">
+          <div class="liebiao-sm01">其它的项</div>
+          <div class="liebiao-sm02">其它的项说明</div>
+          <div class="liebiao-sm03">
+            其它的项的详细说明，balabala。。。好多好多的说明文字
+            div标签都是成对的，一对div都是在一条线上
+          </div>
+        </div>
+      </div>
+      <!-- 列表项结束==================================== -->
+
+      <!-- 列表项=========================================== -->
+      <div class="liebiao01">
+        <div>
+          <img src="../images/webpack.png" alt="" class="liebiao-img" />
+        </div>
+        <div class="liebiao-sm">
+          <div class="liebiao-sm01">其它的项</div>
+          <div class="liebiao-sm02">其它的项说明</div>
+          <div class="liebiao-sm03">
+            其它的项的详细说明，balabala。。。好多好多的说明文字
+            div标签都是成对的，一对div都是在一条线上
+          </div>
+        </div>
+      </div>
+      <!-- 列表项结束==================================== -->
+
+      <!-- 列表项=========================================== -->
+      <div class="liebiao01">
+        <div>
+          <img src="../images/webpack.png" alt="" class="liebiao-img" />
+        </div>
+        <div class="liebiao-sm">
+          <div class="liebiao-sm01">其它的项</div>
+          <div class="liebiao-sm02">其它的项说明</div>
+          <div class="liebiao-sm03">
+            其它的项的详细说明，balabala。。。好多好多的说明文字
+            div标签都是成对的，一对div都是在一条线上
+          </div>
+        </div>
+      </div>
+      <!-- 列表项结束==================================== -->
+
+      <!-- 列表项=========================================== -->
+      <div class="liebiao01">
+        <div>
+          <img src="../images/webpack.png" alt="" class="liebiao-img" />
+        </div>
+        <div class="liebiao-sm">
+          <div class="liebiao-sm01">其它的项</div>
+          <div class="liebiao-sm02">其它的项说明</div>
+          <div class="liebiao-sm03">
+            其它的项的详细说明，balabala。。。好多好多的说明文字
+            div标签都是成对的，一对div都是在一条线上
+          </div>
+        </div>
+      </div>
+      <!-- 列表项结束==================================== -->
+      <div class="clearfix"></div>
+    </div>
+    <!-- 项目列表部分结束================================== -->
+
+    <!-- 开始部分 -->
+    <div>
+      <div>标题</div>
+      <div>内容</div>
+    </div>
+    <!-- 结束部分 -->
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>demo.html</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .div-one {
+            border: 1px solid red;
+            cursor: pointer;
+            width: 500px;
+            height: 300px;
+            margin: 0px auto;
+            transition: all 2s ease-in-out
+        }
+
+        .div-one:hover {
+            font-size: 2rem;
+            color: blue;
+        }
+
+        .div-two {
+            position: fixed;
+            top: 200px;
+            right: 0%;
+            width: 1-1rem;
+        }
+
+        .div-three {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: 1000;
+            background-color: brown;
+            border-radius: 20px 20px;
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            color: white;
+            animation: movediv 5s infinite;
+        }
+
+        @keyframes movediv {
+            0% {
+                top: 0px;
+                left: 0px;
+                background-color: aquamarine;
+            }
+
+            20% {
+                top: 67%;
+                left: 25%;
+                background-color: rgb(27, 204, 65);
+            }
+
+            40% {
+                top: 33%;
+                left: 50%;
+                background-color: rgb(216, 30, 40);
+            }
+            60% {
+                top: 67%;
+                left: 75%;
+                background-color: rgb(224, 243, 57);
+            }
+            80% {
+                top: 0px;
+                left: 90%;
+                background-color: aquamarine;
+            }
+            100% {
+                top: 0px;
+                left: 0px;
+                background-color: aquamarine;
+            }
+        }
+
+        /* 
+        alt+shift 开关输入法
+        alt+shift+f 对齐代码
+        ctrl+shift+f 简繁切换
+        */
+    </style>
+</head>
+
+<body>
+    <div class="div-one">
+        <div>带样式的div</div>
+    </div>
+    <div class="div-two">
+        移动位置
+    </div>
+    <div class="div-three">
+        飘动的div
+    </div>
+</body>
+
+</html>

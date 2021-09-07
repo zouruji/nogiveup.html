@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>表单元素</title>
+  <!-- 引入外部css文件 -->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/form.css">
+  
+</head>
+
+<body>
+  <!-- h1-h6是标题 -->
+  <h1 class="tc">input元素</h1>
+  <!-- 块级元素 -->
+  <div class="tc">
+    <!-- type=text，文本输入框 -->
+    <!-- placeholder是输入元素的提示信息 -->
+    <input type="text" placeholder="文本输入框">
+    <!-- type=password，密码输入框 -->
+    <input type="password" placeholder="密码输入框">
+  </div>
+  <!-- 复选框的CheckBox属性表示选中 -->
+  <!-- label可以扩展input元素的点击范围 -->
+  <h1 class="tc">checkbbox.复选框,type=radio,单选按钮</h1>
+  <div class="tc">
+    <label>
+      <input type="checkbox">游戏
+    </label>
+    <label>
+      <input type="checkbox">音乐
+    </label>
+  </div>
+  <!-- 只有name属性一样的radio才有互斥效果，checkbox也是选中 -->
+  <div class="tc">
+<label>
+  <input type="radio" name="xingbie">男生
+</label>
+<label>
+  <input type="radio" name="xingbie" checked>女生
+</label>
+<label>
+  <input type="radio" name="xueli">本科
+</label>
+<label>
+  <input type="radio" name="xueli" checked>大专
+</label>
+  </div>
+  <h1 class="tc">下拉列表</h1>
+  <div class="tc">
+    <!-- select是下拉选项，默认是单选模式
+         option是下拉选择项，valua是选项中，内容是显示文本
+         selected属性是默认选择项 -->
+    <select>
+      <option value="1">人事部</option>
+      <option value="2">开发部</option>
+    </select>
+    <!-- 多选的下拉类别.size属性表示显示多少项，
+    multiple是可以多选，按住Ctrl是跳跃多选，shift是连续多选 -->
+    <select size="3" multiple>
+      <option value="250">严豪杰1</option>
+      <option value="500">严豪杰2</option>
+      <option value="750">严豪杰3</option>
+      <option value="1">严豪杰4</option>
+      <option value="2">严豪杰5</option>
+      <option value="3">严豪杰6</option>
+    </select>
+  </div>
+
+  <h1 class="tc">多行文本框</h1>
+  <div class="tc">
+    <!-- 
+      textarea为多行文本框
+      cols是每行显示的文本数，类似设置宽度
+      rows是默认显示行数，类型设置高度
+      超过设定值会出现滚动条
+     -->
+     <textarea  cols="80" rows="5"></textarea>
+  </div>
+
+  <!-- 特殊的输入框 -->
+  <h1 class="tc">特殊的输入框</h1>
+  <div class="tc">
+<!-- 隐藏输入框，不会显示的文本框 -->
+<input type="hidden" name="hidInfo" value="隐藏值">
+<!-- 日期输入框 -->
+<input type="date">
+<!-- 数字输入框 -->
+<input type="number">
+  </div>
+  <!-- 按钮 -->
+  <h1 class="tc">按钮</h1>
+  <div class="tc">
+    <button>标准按钮</button>
+    <input type="submit" value="表单提交按钮">
+    <input type="reset" value="表单重置按钮">
+  </div>
+
+</body>
+
+</html>

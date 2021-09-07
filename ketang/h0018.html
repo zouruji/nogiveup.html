@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>h0018.html-css2</title>
+    <style>
+        /* 
+     .名称是class(类选择器)，只有class属性=名称的元素有效
+     列如：
+      .mystyle{
+          样式。。。
+        }
+      只有<div class="myclass"></div>这样才会套用
+      font-size是设置字体大小，标准字体大小只有七种
+      默认大小是normal，这个不用写
+      三种加大large，x-large,xx-large
+      三种缩小small，x-small,xx-small
+
+      */
+        .font1 {
+            font-size: x-large;
+            color: blue;
+        }
+
+        .font2 {
+            font-size: x-small;
+
+        }
+
+        .font3 {
+            font-size: 30px;
+        }
+
+        .font4 {
+            font-size: 2.5em;
+        }
+
+        .font5 {
+            font-size: 2.5rem;
+        }
+
+        /* 
+        字体大小还可以接受px（像素）作为单位
+        以及em（倍数）作为大小单位
+        注意：em是相对计量单位，缩放的倍数是相对于包含
+        该元素的字体大小，而不是基础字体大小
+        也就是说如果包含它的字体是30px,2em就是60px
+        rem也是倍数，但是rem不受容器字体大小限制，
+        始终是通过基准字体大小计算，是css3提供的新计量单位
+        可以理解为em的升级版本
+        */
+    </style>
+</head>
+
+<body>
+        <p align="right">
+                <a href="index.html">返回目录</a>
+             </p>
+    <!-- 字体 -->
+    <span>参考</span>
+    <span class="font1">字体</span>
+    <span class="font2">字体二</span>
+    <span class="font3">字体三</span>
+    <span class="font4">字体四</span>
+    <span class="font3">哈哈<span class="font4">嘻嘻</span> <span class="font2">字体二</span></span>
+    <hr>
+        <span class="font5">rem字体</span>
+        <span class="font3">嘻嘻嘻<span class="font5">藕孔</span><span class="font2">字体二</span></span>
+     <hr>
+     <span style="font-size: 0.5rem;color:#660;">一</span><span style="font-size: 1rem;color:#770;">二</span><span style="font-size: 1.5rem;color:#880;">三</span><span style="font-size: 2rem;color:#990;">四</span><span style="font-size: 2.5rem;color:#aa0;">五</span><span style="font-size: 3rem;color:#bb0;">六</span><span style="font-size: 3.5rem;color:#cc0;">七</span>
+     <hr>
+     <span style="font-size: 0.5rem;color:#020135;">一</span><span style="font-size: 1rem;color:#131246;">二</span><span style="font-size: 1.5rem;color:#242357;">三</span><span style="font-size: 2rem;color:#353468;">四</span><span style="font-size: 2.5rem;color:#464579;">五</span><span style="font-size: 3rem;color:#57568a;">六</span><span style="font-size: 3.5rem;color:#68679b;">七</span>
+</body>
+
+</html>

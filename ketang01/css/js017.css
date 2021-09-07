@@ -1,0 +1,30 @@
+.info{
+    width:800px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.info img {
+    width: 10rem;
+    border-radius: 20%;
+    border: 1px solid #ff0000;
+    }
+    
+.info > div {
+    display: flex;
+    align-items: center;
+}
+
+#divInfo{
+    height: 50rem;
+    /* overflow是控制滚动条是否显示 
+       auto表示自动（内容没有超出就不出现，否则出现）
+       gidden表示不要出现
+    */
+    overflow:auto;
+}
+
+.bg-color{
+    
+}

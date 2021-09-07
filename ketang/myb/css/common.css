@@ -1,0 +1,13 @@
+/* 公用的css样式 */
+body {
+  /* margin:外边距 */
+  margin: 0px;
+  /* padding：内边距 */
+  padding: 0px;
+}
+
+/* .类名称.是类选择器，表示class属性和类名称匹配就会生效 */
+.tc {
+  /* text-align: */
+  text-align: center;
+}

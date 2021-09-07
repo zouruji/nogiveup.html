@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>/xuexi/css002.html</title>
+    <style>
+        .tr {
+            text-align: right
+        }
+
+        /* 
+        字体大小：
+        1.默认的七种枚举字体大小（不推荐）
+        2.em  将当前容器的字体大小按照倍数播放（是相对大小）
+        3.rem  按照基准字体大小按照倍数缩放（是绝对大小，推荐使用！）
+        4.px  像素值（绝对大小）
+         */
+        .f01 {
+            font-size: xx-small;
+        }
+
+        .f02 {
+            font-size: x-small;
+        }
+
+        .f03 {
+            font-size: small;
+        }
+
+        .f04 {
+            font-size: large;
+        }
+
+        .f05 {
+            font-size: x-large;
+        }
+
+        .f06 {
+            font-size: xx-large;
+        }
+
+        .f07 {
+            font-size: 36px;
+        }
+
+        .f08 {
+            font-size: 72px;
+        }
+
+        .f09 {
+            font-size: 3em;
+        }
+
+        .f10 {
+            font-size: 3rem;
+        }
+
+        .total {
+            /*
+             所有html相关知识都是可以组合使用！！！
+             */
+            text-align: right;
+            font-size: 5rem;
+            color: #345678;
+            background-color: #abcdef;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tr">
+        <a href="index.html">返回目录</a>
+        |
+        <a href="../index.html">返回首页</a>
+    </div>
+
+    </div>
+    <div>
+        <span class="f01">字体1</span>
+    </div>
+    <div>
+        <span class="f01">字体1</span>
+        <span class="f02">字体2</span>
+        <span class="f03">字体3</span>
+        <span>默认</span>
+        <span class="f04">字体4</span>
+        <span class="f05">字体5</span>
+        <span class="f06">字体6</span>
+        <hr>
+        <span class="f07">字体7</span>
+        <span class="f08">字体8</span>
+        <hr>
+        <span class="f09">字体9</span>
+        <span class="f10">字体10</span>
+        <hr>
+        <span class="f08">
+            <span>没有缩放72px</span>
+            <span class="f09">em缩放 3*72px</span>
+            <span class="f10">rem缩放 3*基础值</span>
+        </span>
+        <div class="total">知识点组合</div>
+        <div class="tr">
+            <a href="../index.html">返回首页</a>
+        </div>
+        <div class="tc">
+            <a href="css001.html">颜色</a>
+            |
+            <a href="css002.html">字体大小</a>
+        </div>
+    </div>
+</body>
+
+</html>

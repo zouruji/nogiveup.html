@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>有序清单</title>
+</head>
+
+<body>
+    <!-- 
+        第一个嵌套标签，要两个标记完成一个功能
+        有序清单是ol定义，清单项是li定义
+        有序清单是自动给li按照编写的次序补充序号
+        有序清单可以定义序号的美型
+        通过给ol加type属性控制，默认是1，也就是数字序号
+        a,A都是字母序号，只是有大小写区别
+        i，I都是罗马数字序号，只是有大小写区别
+        切记！！！！只有li里面可以放置清单的内容
+        由于html本身是可以任意组合，所以li里面可以是其它标签
+        包括有序清单，所以清单可以嵌套使用，当清单嵌套的时候
+        会自动产生站街缩进的效果
+     -->
+    <ol>
+        <li>第一章</li>
+        <li>第二章</li>
+        <li>大结局</li>
+    </ol>
+    <ol type="I">
+        <li>第一章
+            <ol type="a">
+                <li>第一节</li>
+                <li>第二节</li>
+            </ol>
+        </li>
+        <li>第二章</li>
+        <li>第三章</li>
+        <li>第四章</li>
+        <li>第五章</li>
+        <li>第六章</li>
+    </ol>
+    <a href="index.html"></a>
+</body>
+
+</html>

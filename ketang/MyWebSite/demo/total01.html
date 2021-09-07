@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>小结2-total01.html</title>
+  <link rel="stylesheet" href="total01.css">
+</head>
+
+<body>
+  <div class="bbox">
+    <div class="bg01 fl">浮动元素</div>
+    <div class="bg02">非浮动元素</div>
+  </div>
+  <hr>
+  <div class="bbox">
+    <!-- 全部都是浮动元素会造成容器高度丢失 -->
+    <div class="bg01 fl">浮动一</div>
+    <div class="bg02 fl">浮动二</div>
+    <div class="bg01 fl">浮动三</div>
+    <!-- 清除浮动就可以得到正确的高度，且立即换行 -->
+    <div class="clearfix"></div>
+    <div class="bg02 fl">新的浮动行1</div>
+    <div class="bg01 fl">新的浮动行2</div>
+    <!-- 养成良好的习惯，浮动和清除浮动配合 -->
+    <div class="clearfix"></div>
+  </div>
+  <hr>
+  <div class="bbox bg03">
+    <div class="bg01 fl">左浮动</div>
+    <div class="bg02 fr">右浮动</div>
+    <div class="clearfix"></div>
+  </div>
+
+  <hr>
+  <div>组合使用-居中的左右分离菜单效果</div>
+
+  <div class="menu-bg">
+    <div class="menu-center">
+      <div class="fl">
+        <span>首页</span>
+        <span>公司简介</span>
+        <span>校园招聘</span>
+        <span>关于</span>
+      </div>
+      <div class="fr">
+        <span>登录</span>
+        <span>注册</span>
+        <span>联系我们</span>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+  <div class="fixed-bottom">
+    固定到下方
+  </div>
+
+  <div class="fixed-right">
+    固定到右侧
+  </div>
+
+  <div class="fixed-left">
+    广告位招租
+  </div>
+
+  <div style="padding:0px 5rem;">
+    <h1>字体大小演示</h1>
+    <span class="fs01">字体01</span>
+    <span class="fs02">字体02</span>
+    <span class="fs03">字体03</span>
+    <span class="fs04">字体04</span>
+    <div class="fs01">
+      <span class="fs03">字体01里面的字体03（em）</span>
+      <span class="fs04">字体01里面的字体04(rem)</span>
+    </div>
+
+    <div class="fs03">
+      <span class="fs01">字体03里面的字体01</span>
+      <span class="fs04">字体03里面的字体04</span>
+    </div>
+
+<div class="circle">王德发</div>
+  </div>
+
+
+</body>
+</html>

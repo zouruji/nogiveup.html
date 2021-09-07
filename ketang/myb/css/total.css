@@ -1,0 +1,71 @@
+/* total.html */
+
+body {
+  /* 背景图片，css访问其他文件，都是以自己为初始位置
+  而不是以包含它的文件为准 */
+  background-image: url("../images/1549610009171.png");
+  /* 背景图片大小,cover是尽量填满，也可以是像素大小 */
+  background-size: cover;
+  
+}
+
+/* 图片样式 */
+.image-div {
+  /* 背景颜色 */
+  background-color: #00ff00;
+  padding: 1rem;
+  /* 向左浮动 */
+  float: left;
+  /* 圆角 */
+  border-radius: 1rem;
+}
+
+.image-div img {
+/* 设置高宽 */
+width: 400px;
+height: 300px;
+}
+
+.bg-div {
+  background-image: url("../images/1549610023848.png");
+  color: #ffffff;
+  
+}
+
+.clearfix {
+  /* 清除浮动效果，套用这个样式的元素后面的元素必然
+  会另起一行，浮动元素必须和它搭配使用 */
+  clear: both;
+  height: 0px;
+}
+
+/* 选择器：是类选择器表示class属性匹配的元素套用样式
+例如：.class 对应 class=“clear”
+元素名称表示元素类型选择器，只有对应的元素套用样式 
+div p 对应的是 <div> <P>
+#是id选择器表示id(全页面唯一）性匹配的元素套用样式
+#mydiv  对应 id="mydiv"
+所有的选择器可以组合
+组合方式：
+选择器1  选择器2 表示匹配选择器1里面的选择器2元素
+.image .tc
+<div class="images"
+   <span class="tc"></span>
+   <div>
+   <i class="tc"></i>
+   </div>
+   特殊选择器：伪类，：hover表示鼠标悬停的时候，在手机是点击
+   下去没有松开的时候的套用
+   div：hover 对应 所有的div在鼠标悬停的时候
+   */
+
+ul {
+  /* 清单元素特有的样式，设置清单图标的风格 */
+  list-style-type: square;
+}
+
+li:hover {
+  color: #ff0000;
+  /* 鼠标变成指示样式 */
+  cursor: pointer;
+}

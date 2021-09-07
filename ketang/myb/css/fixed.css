@@ -1,0 +1,47 @@
+/* fixed.html的样式 */
+.left-div {
+  /* position表示元素定位方式
+  fixed表示固定位置，
+  通过top（上），left（左），right（右），bottom（下）的值来定位 */
+  position: fixed;
+  top: 20rem;
+  left: 0px;
+  border: 1px solid #ff0000;
+  width: 1.2rem;
+
+}
+
+.main-div {
+  height: 1500px;
+  border: 1px solid #0000ff;
+  margin-top: 2.2rem;
+}
+
+.right-div {
+  position: fixed;
+  top: 50%;
+  right: 0px;
+  
+}
+
+.right-div img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.top-div {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  /* 透明的背景颜色，
+  rgba(0-255的红色，0-255的绿色，
+  0-255的蓝色，0-1的不透明度） */
+  background-color:  rgba(0, 0,0, 0.5);
+  color: #ffffff;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+/* fixed定位会让容器丢失宽度，会以容器的内容作为宽度
+会遮挡在普通的元素上面，所以可能需要对遮挡元素做边距
+或者定位避免遮挡住 */

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表格</title>
+</head>
+
+<body>
+    <!-- 表格是复合标记，也是由一组不同的标记组合完成
+        最外面通过table标记声明要创建表格
+        tr标签是定义表格中的一行
+        td标签是单元格，也就是行中一列，属于容器，类似于li
+        内容和其他标记都是在这个里面
+        表格需要计算里面全部的内容之后才能得到呈现的效果
+        所以不需要用来布局
+        列的宽度是由列中最宽的单元格决定
+        单元格的数量不规范仍然能呈现
+        border属性是表格的边线
+        align属性是表格对齐，不是内容对齐方式
+        width属性是宽度，可以是px值，也可以是百分比
+     -->
+    <table border="1">
+        <tr>
+            <td>第一个单元格</td>
+            <td>第二个单元格</td>
+        </tr>
+        <tr>
+            <td>2.1</td>
+        </tr>
+        <tr>
+            <td>3.1</td>
+            <td>3.2</td>
+            <td>3.3</td>
+        </tr>
+    </table>
+    <!-- 比较完整的表格 
+    caption是表格标题，一般是说明表格的意义
+    不会在表格中出现，而是在表格上面中间的位置出现
+    thead是定义表头，表格中的第一行，说明每一列的意义
+    里面是tr标记
+    列（单元格）是th定义面而不是td
+    tbody是定义表的内容（相对于表头）
+    里面是tr（行）/td（单元格)
+    注意项：table的align属性是将表格缩放到容器的中间位置
+    而不是里面的内容对齐方式
+    内容的对齐方式由tbody，tr，td，th元素控制
+    对齐的最终效果由最近的属性决定（就近原则）
+    -->
+    <table border="1" width="60%">
+        <caption>表格的标题</caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>家庭住址</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align=“right”>张三丰</td>
+                <td align=“right”>男</td>
+                <td>湖北武当山...</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>女</td>
+                <td>湖南文理学院...</td>
+            </tr>
+        </tbody>
+    </table>
+    <a href="index.html"></a>
+</body>
+
+</html>

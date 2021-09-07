@@ -1,0 +1,181 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: '微软雅黑'；
+}
+
+.div-bg-top {
+  /* 顶端背景图片容器div */
+  background-image: url('../images/aliyun.jpg');
+  background-color: rgba(0, 0, 0, 1);
+  color: #eeeeee;
+  background-size: cover;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.div-top-line01{
+  border-bottom: 1px solid #9d9d9d;
+}
+
+.div-top-line01:hover {
+  /* 上端第一行悬停样式 */
+  background-color: #000000;
+}
+
+.line01-01 {
+  /* 三的样式 */
+  padding: 1rem;
+  border-right: 1px solid #e9e3e3;
+  /* 将span这样的非块级元素设置成一行排列的块级元素 */
+  display: inline-block;
+}
+
+.line01-01:hover {
+  /* 三的悬停样式 */
+  background-color: #00aaaa;
+  cursor: pointer;
+}
+
+.line01-input {
+  /* 第一行的输入框样式 */
+  /* 去掉input的外框 */
+  outline: none;
+  width: 80px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid #000000;
+  transition: width 0.5s;
+  cursor: pointer;
+}
+
+.line01-input:hover {
+  /* 第一行的输入框鼠标悬停样式 */
+  width:160px;
+}
+
+.line01-input-span {
+  padding: 0.8rem;
+  display: inline-block;
+  border: 1px solid transparent;
+}
+
+.line01-input-span:hover {
+  /* 输入框组合鼠标悬停样式 */
+  border: 1px solid #00aaaa;
+}
+
+.line01-02 {
+  /*右侧菜单样式 */
+  padding: 0.7rem;
+}
+
+.line01-02 span:hover{
+  /* 右侧菜单鼠标悬停样式 */
+  color:#00aaaa;
+  cursor: pointer;
+}
+
+.line01-03 {
+  color: #ffffff;
+  
+}
+
+.line01-03:hover{
+  cursor: pointer;
+}
+
+.line02-right {
+  /* 第二行免费注册样式 */
+  background-color: #00aaaa;
+  color: #ffffff;
+  padding: 0.8rem 1.2rem;
+  cursor: pointer;
+}
+
+.line02-left {
+  /* 第二行左边样式 */
+  padding: 0.8rem;
+}
+
+.line02-left span {
+  /* 第二行左边里面的span需要左间距 */
+  margin-left: 1rem;
+}
+
+.line02-left span:hover {
+  /* 第二行左边里面的span鼠标悬停样式 */
+  color: #00aaaa;
+  cursor: pointer;
+}
+
+.line01-03 {
+  /* 第三行 */
+  width: 1260px;
+  margin: 0px auto;
+  padding: 50px 0px;
+  color: #ffffff;
+}
+
+.line01-03-01 {
+  /* 第三行中第一行字效果 */
+  font-size: 2.5rem;
+  padding: 0.2rem 0px;
+}
+
+.line01-03-02 {
+  /* 第三行中第二行字效果 */
+  font-size: 1.2rem;
+  padding: 0.2rem 0px;
+}
+
+.line01-03-03 {
+  /* 第三行中第三行字效果 */
+  font-size: 1.2rem;
+  margin: 2.5rem 0px 11rem 0px;
+}
+
+.line01-03-03 span {
+  /* 第三行中第三行字的下划线 */
+  border-bottom: 0.2rem solid #00aaaa;
+  padding-bottom: 0.2rem;
+  transition: color 0.5s ease;
+}
+
+.line01-03-03 span:hover {
+  /* 悬停样式 */
+  cursor: pointer;
+  color: #00aaaa;
+}
+
+.line04 {
+  /* 第四行背景 */
+  background: #333333;
+}
+
+.line04-center {
+  /* 第四行内容居中 */
+  width: 1260px;
+  margin: 0px auto;
+}
+
+.line04-info {
+  /* 第四行信息块 */
+  width: 19%;
+  /* padding: 3rem 3.5rem 3rem 3rem; */
+  border-left: 1px solid #666666;
+}
+
+.line04-info-pd {
+  /* 第四行信息块内边距 */
+  padding: 2rem 2.5rem 2rem 2rem;
+}

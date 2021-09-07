@@ -1,0 +1,15 @@
+/* index。html特有的样式 */
+/* a，b中间的空格表示a选择器里面的b元素 */
+/* .container  a表示class为container的元素里面的a标签 */
+.container a{
+  /* text-decoration是文本修饰，none表示没有
+  由于a标签天生带有下划线，设置成none就是去掉下划线 */
+text-decoration: none;
+}
+
+/* :hover是伪类，表示当鼠标悬停在元素上的时候 */
+.container a:hover {
+  /* color是前景色，#是十六进制（0-f）颜色值
+  可以是rgb，rrggbb，例如ff0000，表示红色，00ff00表示绿色 */
+color: #ff0000;
+}

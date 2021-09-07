@@ -1,0 +1,38 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+.bg-div{
+  padding: 0.5rem 0px;
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+.center-div {
+  width: 800px;
+  margin: 0px auto;
+}
+
+.fl{
+  float: left;
+}
+
+.fr{
+  float: right;
+}
+
+.cleaxfix {
+  clear: both;
+}
+
+.float-div {
+  width: 22%;
+  border: 1px solid #000000;
+  padding:0.3rem;
+  margin: 0.3rem;
+}
+
+.float-div img {
+  width: 100%;
+}

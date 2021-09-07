@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表格元素2</title>
+</head>
+
+<body>
+    <!-- input的radio是单选按钮
+    将radio的name设置成一样的就会形成互斥效果
+    还需要添加value属性指定值（只有学习动态页面后才会有效果）
+    添加checked属性表示按钮为选中状态
+ -->
+    性别：
+    <input type="radio" name="xingbie" value="nan">男生♂
+    <input type="radio" name="xingbie" value="nv">女生
+    <input type="radio" name="xingbie" value="mi" checked>保密
+    <!-- 
+        input的checkbox是复选框
+        通过name表示为一组，通过CheckBox表示选中状态
+        value设置提交值
+     -->
+     <hr>
+     你的爱好是：
+     <input type="checkbox" name="ah" value="yx" checked>游戏
+     <input type="checkbox" name="ah" value="yy" checked>音乐
+     <input type="checkbox" name="ah" value="lp">篮球
+     <hr>
+     <!-- 
+         多行文本框- 文本域
+         可以输入多行的文本，内容超过高度会出现滚动条
+         rows属性表示可以显示多少行文本，有点像高度
+         cols属性表示不超过指定数量的字符，超过会自动换行
+         这个属性并不会很准确，因为计算机区分中英文字符
+         有点像宽度
+         注意！！！textarea标签中的内容会成为文本域中默认输入
+         的内容，所以一般会将textarea标记一对贴合在一起
+      -->
+      <textarea  rows="10" cols="80"></textarea>
+      <hr>
+      <!-- 下拉列表，单元表格中的复合标签，提供下拉选项供用户选择
+    比较节约空间
+    select定义下拉列表
+    option子标记定义下拉选项
+    option的selected设置为选中项
+ -->
+ <select>
+   <option>请选择城市</option>
+   <option selected>常德</option>
+   <option>长沙</option>
+ </select>
+</body>
+
+</html>

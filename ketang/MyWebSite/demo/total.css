@@ -1,0 +1,78 @@
+body {
+  /* 解决body天生带有边距的问题 */
+  margin: 0px;
+  padding: 0px;
+}
+
+.box {
+  /* border是边框，
+     边框的宽度，边框的线形，边框的颜色
+  */
+  border: 1px dotted #ff0000;
+}
+
+.box01 {
+  /* 四个位置的border:top上，bottom下，left左，right右 */
+  border-top: 5px solid #ff0000;
+  border-bottom: 10px solid #00ff00;
+  border-left: 15px solid #0000ff;
+  border-right: 20px solid #00ffff;
+}
+
+.myborder {
+  /* 统一边框样式 */
+  border: 1px solid #ff0000;
+}
+
+.box02 {
+  /* 内边距，上右下左 */
+  padding: 5px 10px 15px 20px;
+  border-color: #0000ff;
+}
+
+.box03 {
+  /* 外边距,上右下左 */
+  margin: 5px 10px 15px 20px;
+  border-color: #0000ff;
+}
+
+.box04 {
+  /* 背景颜色 */
+  background-color: #ff0000;
+  padding: 20px;
+}
+
+.box04-inner {
+  background-color: #00ff00;
+  /* 盒模型居中,必须要给宽度，margin：上下边距值 auto；*/
+  width: 600px;
+  margin: 0px auto;
+}
+
+.box05 {
+  background-color: #ff0000;
+  /* 圆角 */
+  border-radius: 10px;
+  /* 圆角不会影响布局，所以一般会和padding搭配
+ 避免内容一部分靠边的地方显示到圆角的外部 */
+  padding: 10px;
+}
+
+.box06 {
+  border: 1px solid #000000;
+  width: 100px;
+  height: 100px;
+  /* box-shadow:阴影,x偏移，y偏移，z偏移 颜色*/
+  box-shadow: 5px 5px 5px #666666;
+}
+
+.box07 {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  /* 阴影的变化，外发光效果
+  只提供z偏移和颜色，x，y偏移都设置为0
+  */
+  box-shadow: 0px 0px 5px #ff0000;
+}
+
